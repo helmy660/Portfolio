@@ -19,10 +19,6 @@ export const SocialMenu = styled.div`
         left: 0px;
         align-items: center;
     }
-
-    // @media ${device.tablet} {
-    //     left: 25%;
-    // }
 `
 
 export const Item = styled.div`

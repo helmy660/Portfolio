@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { device } from './devices';
+
 
 export const Wrapper = styled.div`
     width: 100%;
@@ -9,6 +11,14 @@ export const Wrapper = styled.div`
     }
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+
+
+    @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet}{
+        width: 100vw;
+        height: 70vh;
+        position: fixed;
+        top: 15%;
+    }
 `

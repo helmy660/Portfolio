@@ -11,8 +11,14 @@ export const PortfolioWrapper = styled.div`
     position:fixed;
     -webkit-user-select: none;
 
-    @media ${device.mobileS},${device.mobileM},${device.mobileL}{
-        top: 20%;
-        right: -10px;
+    @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
+        width: 100vw;
+        height: 70vw;
+        right: 0px;
+        top: 0px; 
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
     }
 `

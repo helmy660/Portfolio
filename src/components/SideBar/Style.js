@@ -13,7 +13,7 @@ export const SideMenu = styled.div`
     list-style-type: none;
     -webkit-user-select: none;
 
-    @media ${device.mobileS},${device.mobileM},${device.mobileL}{
+    @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet}{
         flex-direction: row;
         justify-content: center;
         align-items: center;
