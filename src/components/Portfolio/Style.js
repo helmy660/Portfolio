@@ -12,8 +12,8 @@ export const PortfolioWrapper = styled.div`
     -webkit-user-select: none;
 
     @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
-        width: 100vw;
-        height: 70vw;
+        width: 100px;
+        height: 100px;
         right: 0px;
         top: 0px; 
         display: flex;

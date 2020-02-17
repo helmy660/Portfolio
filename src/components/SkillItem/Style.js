@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 import { color1, color7, color2 } from '../../globalStyle/colorCode';
 
-export const Wrapper = styled.div` 
-    width: 80%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-`
+// export const Wrapper = styled.div` 
+//     width: 80%;
+//     position: relative;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     flex-wrap: nowrap;
+// `
 
-export const Card = styled.div`
+export const SkillCard = styled.div`
     width: 70%;
     min-width: 70%;
     height: 50px;
@@ -38,7 +38,7 @@ export const SkillImage = styled.img`
     width: 80px;
 `
 
-export const Details = styled.div`
+export const SkillDetails = styled.div`
     margin-left: 20px;   
 `
 
@@ -49,7 +49,7 @@ export const SkillTitle = styled.div`
     margin-bottom: 5px;
 `
 
-export const Stars = styled.div`
+export const SkillStars = styled.div`
     color: ${color7};
     font-size: 13px;
 `

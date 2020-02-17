@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrapper } from '../../globalStyle/Style';
+import { CardWrapper } from '../../globalStyle/Style';
 import SkillItem from '../SkillItem/SkillItem';
 
 class SkillList extends Component {
@@ -63,7 +63,7 @@ class SkillList extends Component {
     render() {
         let skills = this.state;
         return (
-            <Wrapper>
+            <CardWrapper>
                 
                 {
                     skills.map(item => {
@@ -71,7 +71,7 @@ class SkillList extends Component {
                     })
                 }
 
-            </Wrapper>
+            </CardWrapper>
         );
     }
 }

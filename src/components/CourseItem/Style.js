@@ -1,24 +1,24 @@
 import styled from 'styled-components';
 import { color1, color2, color5 } from '../../globalStyle/colorCode';
 
-export const Wrapper = styled.div` 
-    width: 90%;
-    min-width: 90%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-`
+// export const Wrapper = styled.div` 
+//     width: 90%;
+//     min-width: 90%;
+//     position: relative;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     flex-wrap: nowrap;
+// `
 
-export const Card = styled.div`
+export const CourseCard = styled.div`
     width: 100%;
     min-width: 100%;
     height: 350px;
     margin: 0 auto;
 `
 
-export const Background = styled.div`
+export const CourseBackground = styled.div`
     height: 50%;
     width: 90%;
     background-image: url("${props => props.src}");

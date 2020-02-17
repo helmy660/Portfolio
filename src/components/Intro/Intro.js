@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Background, PersonalImage, PersonalDetails, IconShape, Title1, Title2 } from './Style';
+import { IntroCard, Background, PersonalImage, PersonalDetails, IconShape, Title1, Title2 } from './Style';
+import { CardWrapper } from '../../globalStyle/Style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faAt, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 
@@ -16,22 +17,24 @@ class Intro extends Component {
     }
     render() {
         return (
-            <Card>
-                <Background></Background>
-                <PersonalImage src={require('../../assets/helmy.png')}></PersonalImage>
-                <PersonalDetails>
-                    <Title1>{this.state.title}</Title1>
-                    <Title2>
-                        <IconShape><FontAwesomeIcon icon={faAddressBook} /></IconShape> &nbsp;{this.state.address}
-                    </Title2>
-                    <Title2>
-                        <IconShape><FontAwesomeIcon icon={faPhone} /></IconShape> &nbsp;{this.state.phone}
-                    </Title2>
-                    <Title2>
-                        <IconShape><FontAwesomeIcon icon={faAt} /></IconShape> &nbsp;{this.state.email}
-                    </Title2>
-                </PersonalDetails>
-            </Card>
+            <CardWrapper>
+                <IntroCard>
+                    <Background></Background>
+                    <PersonalImage src={require('../../assets/helmy.png')}></PersonalImage>
+                    <PersonalDetails>
+                        <Title1>{this.state.title}</Title1>
+                        <Title2>
+                            <IconShape><FontAwesomeIcon icon={faAddressBook} /></IconShape> &nbsp;{this.state.address}
+                        </Title2>
+                        <Title2>
+                            <IconShape><FontAwesomeIcon icon={faPhone} /></IconShape> &nbsp;{this.state.phone}
+                        </Title2>
+                        <Title2>
+                            <IconShape><FontAwesomeIcon icon={faAt} /></IconShape> &nbsp;{this.state.email}
+                        </Title2>
+                    </PersonalDetails>
+                </IntroCard>
+            </CardWrapper>
         );
     }
 }

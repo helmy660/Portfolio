@@ -3,7 +3,7 @@ import { color1, color2, color5 } from '../../globalStyle/colorCode';
 import { device } from '../../globalStyle/devices';
 
 
-export const Card = styled.div`
+export const IntroCard = styled.div`
     height: 80%;
     width: 65%;
     position: relative;

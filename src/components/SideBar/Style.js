@@ -20,7 +20,6 @@ export const SideMenu = styled.div`
         width: 100vw;
         height: 100px;
         top: 0px;
-
     }
 `
 
@@ -46,15 +45,14 @@ export const Item = styled.div`
 
     @media ${device.mobileS},${device.mobileM},${device.mobileL} {
         width: 60%;
-        height: 10%;
+        height: 20%;
         margin: 0 auto;
         padding: 0 auto;
+        background-color: #808080;
     }
 `
 
 export const Title = styled.div`
-    width: 100%;
-    height: 100%;
     display: inline-block;
     color: white;
 
@@ -63,7 +61,5 @@ export const Title = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 60%;
-        height: 60%;
     }
 `

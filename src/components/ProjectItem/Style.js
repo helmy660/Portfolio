@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { color7, color1, color5, color6, color2 } from '../../globalStyle/colorCode';
 
 
-export const Wrapper = styled.div` 
-    width: 90%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-`
+// export const Wrapper = styled.div` 
+//     width: 90%;
+//     position: relative;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: flex-end;
+//     flex-wrap: nowrap;
+// `
 
-export const Card = styled.div`
+export const ProjectCard = styled.div`
     width: 70%;
     min-width: 70%;
     height: 250px;
@@ -56,7 +56,7 @@ export const Tools = styled.div`
     flex-direction: row;
 `
 
-export const ProjectTools = styled.div`
+export const ProjectTool = styled.div`
     color: ${color2};
     font-size: 1em;
     background-color: orange;

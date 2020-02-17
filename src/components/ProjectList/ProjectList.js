@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Wrapper } from '../../globalStyle/Style';
+import { CardWrapper } from '../../globalStyle/Style';
 import ProjectItem from '../ProjectItem/ProjectItem';
 import sensor from'../../assets/sensor.png'
 
@@ -42,7 +42,7 @@ class ProjectList extends Component {
     render() {
         let projects = this.state;
         return (
-            <Wrapper>
+            <CardWrapper>
 
                 {
                     projects.map(item => {
@@ -50,7 +50,7 @@ class ProjectList extends Component {
                     })
                 }
                 
-            </Wrapper>
+            </CardWrapper>
         );
     }
 }
