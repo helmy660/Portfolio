@@ -2,36 +2,35 @@ import styled from 'styled-components';
 import { device } from '../../globalStyle/devices';
 
 export const SideMenu = styled.div`
-    width: 200px;
-    min-width: 170px;
+    width: 20%;
+    min-width: 20%;
     height: 50%; 
-    color: white;
     position: fixed;
+    top: 25%;
+    left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     list-style-type: none;
     -webkit-user-select: none;
 
     @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet}{
         flex-direction: row;
         justify-content: center;
-        align-items: center;
         width: 100vw;
-        height: 100px;
+        height: 15vh;
         top: 0px;
+        left: 0px;
     }
 `
 
-export const Item = styled.div`
+export const SideItem = styled.div`
     width: 60%;
     height: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 15px;
-    margin-bottom: 10%;
-    padding-left: 15px;
+    padding-left: 10px;
     
     &:hover {
         background-color: #808080;
@@ -44,22 +43,31 @@ export const Item = styled.div`
     }
 
     @media ${device.mobileS},${device.mobileM},${device.mobileL} {
-        width: 60%;
-        height: 20%;
-        margin: 0 auto;
-        padding: 0 auto;
-        background-color: #808080;
+        flex-direction: row;
+        align-items: center;
+        width: 15%;
+        height: 100%;
+        // margin: 0px auto;
     }
 `
 
-export const Title = styled.div`
-    display: inline-block;
+export const ItemDetails = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: white;
-
+    
     @media ${device.mobileS},${device.mobileM},${device.mobileL} {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    }
+`
+
+export const Title = styled.p`
+    font-size: 16px;
+    padding-left: 15px;
+    font-family: "Times New Roman", Times, serif;
+    @media ${device.mobileS},${device.mobileM},${device.mobileL} {
+        padding: 0px;
+        font-size: 17px;
     }
 `

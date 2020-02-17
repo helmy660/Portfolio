@@ -2,53 +2,57 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserTie, faCheckCircle, faTasks, faLaptopCode, faFile } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { SideMenu, Item, Title } from "./Style";
+import { SideMenu, SideItem, Title, ItemDetails } from "./Style";
 
 
 class SideBar extends Component {
     render() {
         return (
             <SideMenu>              
-                <Item>
+                <SideItem>
                     <Link to={'/'}>
-                        <Title>
-                            <FontAwesomeIcon icon={faUserTie}/>&nbsp; &nbsp;Home
-                        </Title>
+                        <ItemDetails>
+                            <FontAwesomeIcon icon={faUserTie}/>
+                            <Title>Home</Title>
+                        </ItemDetails>
                     </Link>
-                </Item>
+                </SideItem>
 
-                <Item>
+                <SideItem>
                     <Link to={'/skills'}>
-                        <Title>
-                            <FontAwesomeIcon icon={faLaptopCode}/>&nbsp; &nbsp;Skills
-                        </Title>
+                        <ItemDetails>
+                            <FontAwesomeIcon icon={faLaptopCode}/>
+                            <Title>Skills</Title>
+                        </ItemDetails>
                     </Link>
-                </Item>
+                </SideItem>
     
-                <Item>
+                <SideItem>
                     <Link to={'/projects'}>
-                        <Title>
-                            <FontAwesomeIcon icon={faTasks}/>&nbsp; &nbsp;Projects
-                        </Title>
+                        <ItemDetails>
+                            <FontAwesomeIcon icon={faTasks}/>
+                            <Title>Projects</Title>
+                        </ItemDetails>
                     </Link>
-                </Item>
+                </SideItem>
 
-                <Item>
+                <SideItem>
                     <Link to={'/courses'}>
-                        <Title>
-                            <FontAwesomeIcon icon={faCheckCircle}/>&nbsp; &nbsp;Courses
-                        </Title>
+                        <ItemDetails>
+                            <FontAwesomeIcon icon={faCheckCircle}/>
+                            <Title>Courses</Title>
+                        </ItemDetails>
                     </Link>
-                </Item>
+                </SideItem>
 
-                <Item>
+                <SideItem>
                     <Link to={'/cv'}>
-                        <Title>
-                            <FontAwesomeIcon icon={faFile}/>&nbsp; &nbsp;Resume
-                        </Title>
+                        <ItemDetails>
+                            <FontAwesomeIcon icon={faFile}/>
+                            <Title>Resume</Title>
+                        </ItemDetails>
                     </Link>
-                </Item>
-
+                </SideItem>
             </SideMenu>
         )
     }
