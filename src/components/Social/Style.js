@@ -2,42 +2,37 @@ import styled from 'styled-components';
 import { device } from '../../globalStyle/devices';
 
 export const SocialMenu = styled.div`
-    width: 350px;
-    min-width: 350px;
-    height: 70px;
+    width: 20%;
+    min-width: 20%;
+    height: 10%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-    bottom: 0;
-    left: 75%;
+    bottom: 0px;
+    left: 70%;
     position:fixed;
 
     @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
         width: 100vw;
+        min-width: 100vw;
+        height: 10vh;
         bottom: 0px;
         left: 0px;
-        align-items: center;
+        margin: 15px auto;
     }
 `
 
-export const Item = styled.div`
-    width: 50px;
-    min-width: 50px;
-    height: 50px;
-    min-height: 50px;
-
-    @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
-        width: 70px;
-        height: 70px;
-    }
-`
-
-export const ItemImage = styled.img`
-    src: "${props => props.src}";
-    width: 80%;
-    height: 80%;
+export const SocialItem = styled.a`
+    background: url("${props => props.src}") no-repeat;
+    background-size: 100% 100%;
+    width: 20%;
+    min-width: 20%;
+    height: 90%;
     border-radius: 50%;
+    margin: 0 auto;
+
     &:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);

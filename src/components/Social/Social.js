@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SocialMenu, Item, ItemImage} from "./Style";
+import { SocialMenu, Item, ItemImage, SocialItem} from "./Style";
 
 class Social extends Component {
     
@@ -15,26 +15,30 @@ class Social extends Component {
     render() {
         return (
             <SocialMenu>
-                <Item>
-                    <a target="_blank" rel="noopener noreferrer" href={this.state.facebook}>
-                        <ItemImage src={require('../../assets/facebook.jpeg')}/>
-                    </a>
-                </Item>
-                <Item>
-                    <a target="_blank" rel="noopener noreferrer" href={this.state.github}> 
-                        <ItemImage src={require('../../assets/github.png')}/>
-                    </a>
-                </Item>
-                <Item> 
-                    <a target="_blank" rel="noopener noreferrer" href={this.state.hackerrank}> 
-                        <ItemImage src={require('../../assets/hackerrank.png')}/>
-                    </a>
-                </Item>
-                <Item>
-                    <a target="_blank" rel="noopener noreferrer" href={this.state.linkedin}> 
-                        <ItemImage src={require('../../assets/linkedin.png')}/>
-                    </a>
-                </Item>
+                <SocialItem
+                    src={require('../../assets/facebook.jpeg')}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href={this.state.facebook}
+                />
+                <SocialItem
+                    src={require('../../assets/github.png')}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href={this.state.github}
+                />
+                <SocialItem
+                    src={require('../../assets/hackerrank.png')}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href={this.state.hackerrank}
+                />
+                <SocialItem
+                    src={require('../../assets/linkedin.png')}
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href={this.state.linkedin}
+                />
             </SocialMenu>
         )
     }
