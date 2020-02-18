@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SocialMenu, Item, ItemImage, SocialItem} from "./Style";
+import { SocialMenu, SocialItem} from "./Style";
 
 class Social extends Component {
     
