@@ -69,6 +69,9 @@ export const Title1 = styled.h1`
 export const Title2 = styled.p`
     font-size: 1em;
     margin-bottom: 10px;
+    @media ${device.mobileS},${device.mobileM},${device.mobileL} {
+        font-size: 0.9em;
+    }
 `
 
 export const IconShape = styled.div`

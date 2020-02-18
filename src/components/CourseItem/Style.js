@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { color1, color2, color5 } from '../../globalStyle/colorCode';
-
+import { device } from '../../globalStyle/devices';
 
 export const CourseCard = styled.div`
     width: 100%;
@@ -39,6 +39,10 @@ export const CourseTitle = styled.h1`
     font-weight: bold;
     font-style: oblique;
     text-shadow: 2px 2px 13px ${color2};
+
+    @media ${device.mobileS},${device.mobileM},${device.mobileL} {
+        font-size: 0.8em;
+    }
 `
 
 export const CourseAuthor = styled.p`
@@ -48,11 +52,18 @@ export const CourseAuthor = styled.p`
     border: 2px solid ${color2};
     background-color: orange;
     border-radius: 12px;
+    padding: 3px;
+    @media ${device.mobileS},${device.mobileM},${device.mobileL} {
+        font-size: 0.9em;
+    }
 `
 
 export const CourseDuration = styled.p`
     font-size: 1em;
     margin-bottom: 10px;
+    @media ${device.mobileS},${device.mobileM},${device.mobileL} {
+        font-size: 0.9em;
+    }
 `
 
 export const IconShape = styled.div`
