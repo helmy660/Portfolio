@@ -34,6 +34,7 @@ export const SideItem = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-left: 10px;
+    padding-right: 10px;
     
     &:hover {
         background-color: #808080;

@@ -10,6 +10,10 @@ export const IntroCard = styled.div`
     min-width: 270px;
     position: relative;
     margin: 10px auto;
+    @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
+        width: 85%;
+        height: 84%;
+    }
 `
 
 export const Background = styled.div`
