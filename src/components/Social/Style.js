@@ -5,22 +5,24 @@ export const SocialMenu = styled.div`
     width: 20%;
     min-width: 20%;
     height: 10%;
+    min-height: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: center;
-    bottom: 0px;
-    left: 70%;
+    bottom: 10px;
+    right: 6%;
     position:fixed;
 
     @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
-        width: 100vw;
-        min-width: 100vw;
+        width: 100%;
+        min-width: 100%;
         height: 10vh;
         bottom: 0px;
-        left: 0px;
+        right: 0px;
         margin: 15px auto;
+        position: absolute;
     }
 `
 

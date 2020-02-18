@@ -4,7 +4,8 @@ import { device } from '../../globalStyle/devices';
 export const SideMenu = styled.div`
     width: 20%;
     min-width: 20%;
-    height: 50%; 
+    height: 50%;
+    min-height: 100px; 
     position: fixed;
     top: 25%;
     left: 15px;
@@ -18,8 +19,9 @@ export const SideMenu = styled.div`
         flex-direction: row;
         justify-content: center;
         width: 100vw;
-        height: 15vh;
-        top: 0px;
+        height: 10vh;
+        min-height: 10vh;
+        top: 20px;
         left: 0px;
     }
 `
@@ -47,7 +49,7 @@ export const SideItem = styled.div`
         align-items: center;
         width: 15%;
         height: 100%;
-        // margin: 0px auto;
+        padding-top: 10px;
     }
 `
 

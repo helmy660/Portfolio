@@ -1,21 +1,16 @@
 import styled from 'styled-components';
 import { color1, color2, color5 } from '../../globalStyle/colorCode';
 
-// export const Wrapper = styled.div` 
-//     width: 90%;
-//     min-width: 90%;
-//     position: relative;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-end;
-//     flex-wrap: nowrap;
-// `
 
 export const CourseCard = styled.div`
     width: 100%;
     min-width: 100%;
     height: 350px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 `
 
 export const CourseBackground = styled.div`
@@ -27,9 +22,8 @@ export const CourseBackground = styled.div`
 `
 
 export const CourseDetails = styled.div`
-    height: 35%;
+    height: 40%;
     width: 90%;
-    position: absolute;
     background-color: ${color1};
     padding-top: 10px;
     color: ${color2};
@@ -40,7 +34,7 @@ export const CourseDetails = styled.div`
 `
 
 export const CourseTitle = styled.h1`
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 20px;
     font-weight: bold;
     font-style: oblique;

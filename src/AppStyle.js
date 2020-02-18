@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from './globalStyle/devices'
 
 export const Wrapper = styled.div`
     background-image: url("https://images.wallpapersden.com/image/download/star-lord-colorful_58140_2560x1440.jpg");
@@ -7,8 +8,14 @@ export const Wrapper = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    
+    @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        align-items: center;        
+    }
+
 `

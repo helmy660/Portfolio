@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ResumeCard } from './Style';
+import { ResumeCard, Iframe } from './Style';
 import { CardWrapper } from '../../globalStyle/Style';
 import { pdfjs, Document, Page } from "react-pdf";
 import file from '../../assets/resume.pdf';
@@ -15,13 +15,16 @@ class Resume extends Component {
         return(
             <CardWrapper>
                 <ResumeCard>
-                    <Document
+                    <Iframe src={file}/>
+
+                    {/* </Iframe> */}
+                    {/* <Document
                         file={file}
                         onLoadSuccess={this.onDocumentLoadSuccess}
-                    >
-                        <Page pageNumber={1} />
+                        >
+                        <Page pageNumber={1}/>
                         <Page pageNumber={2} />
-                    </Document>
+                    </Document> */}
                 </ResumeCard>
             </CardWrapper>
         )

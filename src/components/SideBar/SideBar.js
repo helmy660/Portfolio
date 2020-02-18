@@ -10,7 +10,7 @@ class SideBar extends Component {
         return (
             <SideMenu>              
                 <SideItem>
-                    <Link to={'/'}>
+                    <Link to={'/'} style={{ textDecoration: 'none' }}>
                         <ItemDetails>
                             <FontAwesomeIcon icon={faUserTie}/>
                             <Title>Home</Title>
@@ -19,7 +19,7 @@ class SideBar extends Component {
                 </SideItem>
 
                 <SideItem>
-                    <Link to={'/skills'}>
+                    <Link to={'/skills'} style={{ textDecoration: 'none' }}>
                         <ItemDetails>
                             <FontAwesomeIcon icon={faLaptopCode}/>
                             <Title>Skills</Title>
@@ -28,7 +28,7 @@ class SideBar extends Component {
                 </SideItem>
     
                 <SideItem>
-                    <Link to={'/projects'}>
+                    <Link to={'/projects'} style={{ textDecoration: 'none' }}>
                         <ItemDetails>
                             <FontAwesomeIcon icon={faTasks}/>
                             <Title>Projects</Title>
@@ -37,7 +37,7 @@ class SideBar extends Component {
                 </SideItem>
 
                 <SideItem>
-                    <Link to={'/courses'}>
+                    <Link to={'/courses'} style={{ textDecoration: 'none' }}>
                         <ItemDetails>
                             <FontAwesomeIcon icon={faCheckCircle}/>
                             <Title>Courses</Title>
@@ -46,7 +46,7 @@ class SideBar extends Component {
                 </SideItem>
 
                 <SideItem>
-                    <Link to={'/cv'}>
+                    <Link to={'/cv'} style={{ textDecoration: 'none' }}>
                         <ItemDetails>
                             <FontAwesomeIcon icon={faFile}/>
                             <Title>Resume</Title>
