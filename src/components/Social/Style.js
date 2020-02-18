@@ -29,9 +29,9 @@ export const SocialMenu = styled.div`
 export const SocialItem = styled.a`
     background: url("${props => props.src}") no-repeat;
     background-size: 100% 100%;
-    width: 20%;
-    min-width: 20%;
-    height: 90%;
+    width: 16%;
+    min-width: 16%;
+    height: 75%;
     border-radius: 50%;
     margin: 0 auto;
 

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { device } from '../../globalStyle/devices';
+import { color5 } from '../../globalStyle/colorCode';
 
 export const SideMenu = styled.div`
     width: 20%;
@@ -50,6 +51,10 @@ export const SideItem = styled.div`
         width: 15%;
         height: 100%;
         padding-top: 10px;
+
+        &:hover {
+            background-color: ${color5};
+        }
     }
 `
 

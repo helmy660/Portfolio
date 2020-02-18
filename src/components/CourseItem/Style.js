@@ -34,7 +34,7 @@ export const CourseDetails = styled.div`
 `
 
 export const CourseTitle = styled.h1`
-    font-size: 1em;
+    font-size: 0.9em;
     margin-bottom: 20px;
     font-weight: bold;
     font-style: oblique;

@@ -10,6 +10,8 @@ export const Wrapper = styled.div`
     background-size: cover;
     
     @media ${device.mobileS},${device.mobileM},${device.mobileL},${device.tablet} {
+        background-image: none;
+        background-color: #282828;
         display: flex;
         flex-direction: column;
         justify-content: center;
