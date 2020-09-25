@@ -4,38 +4,33 @@ import { faPhone, faAt, faAddressBook } from "@fortawesome/free-solid-svg-icons"
 
 import { IntroCard, Background, PersonalImage, PersonalDetails, IconShape, Title1, Title2 } from "../../style/home";
 import { CardWrapper } from "../../style/wrapper";
+import { personalInfo } from "../../resources";
 
 export default function Intro() {
-  const data = {
-    title: "Full Stack Developer",
-    address: "Sherouk City - Cairo",
-    phone: "01141664845",
-    email: "mohamedhelmy6660@gmail.com",
-  };
   return (
     <CardWrapper>
       <IntroCard>
         <Background></Background>
         <PersonalImage src={require("../../assets/helmy.png")}></PersonalImage>
         <PersonalDetails>
-          <Title1>{data.title}</Title1>
+          <Title1>{personalInfo.title}</Title1>
           <Title2>
             <IconShape>
               <FontAwesomeIcon icon={faAddressBook} />
             </IconShape>{" "}
-            {data.address}
+            {personalInfo.address}
           </Title2>
           <Title2>
             <IconShape>
               <FontAwesomeIcon icon={faPhone} />
             </IconShape>{" "}
-            {data.phone}
+            {personalInfo.phone}
           </Title2>
           <Title2>
             <IconShape>
               <FontAwesomeIcon icon={faAt} />
             </IconShape>{" "}
-            {data.email}
+            {personalInfo.email}
           </Title2>
         </PersonalDetails>
       </IntroCard>
