@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { color1, color7, color2 } from "../../globalStyle/colorCode";
-import { device } from "../../globalStyle/devices";
+import { color1, color7, color2 } from "../colorCode";
+import { device } from "../devices";
 
 export const SkillCard = styled.div`
   width: 70%;
@@ -20,10 +20,7 @@ export const SkillCard = styled.div`
     box-shadow: 3px 3px 3px ${color7};
   }
 
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     width: 90%;
     min-width: 90%;
   }
@@ -34,10 +31,7 @@ export const SkillImage = styled.img`
   border-radius: 50%;
   height: 80px;
   width: 80px;
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     width: 30%;
   }
 `;

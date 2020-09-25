@@ -1,9 +1,9 @@
 import React from "react";
-import { CardWrapper } from "../../globalStyle/Style";
-import ProjectItem from "../ProjectItem";
-import sensor from "../../assets/sensor.png";
+import { CardWrapper } from "../../../globalStyle/Style";
+import { ProjectItem } from "../";
+import sensor from "../../../assets/sensor.png";
 
-export default function ProjectList() {
+export function ProjectList() {
   const projects = [
     {
       projectTitle: "Sensor Wallet",

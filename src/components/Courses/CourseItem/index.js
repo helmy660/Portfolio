@@ -7,11 +7,11 @@ import {
   CourseAuthor,
   CourseDuration,
   IconShape,
-} from "./Style";
+} from "../../../globalStyle/courses";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 
-export default function CourseItem(props) {
+export function CourseItem(props) {
   return (
     <CourseCard>
       <CourseBackground src={props.course.courseImage}></CourseBackground>

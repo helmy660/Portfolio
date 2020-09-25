@@ -1,8 +1,8 @@
 import React from "react";
-import { CardWrapper } from "../../globalStyle/Style";
-import SkillItem from "../SkillItem";
+import { CardWrapper } from "../../../globalStyle/Style";
+import { SkillItem } from "../";
 
-export default function SkillList() {
+export function SkillList() {
   const skills = [
     {
       skillImage: "https://secure.meetupstatic.com/photos/event/5/7/d/3/global_436702483.jpeg",

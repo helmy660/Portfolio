@@ -1,7 +1,7 @@
 import React from "react";
-import { ProjectCard, ProjectTitle, ProjectDesc, Tools, ProjectTool, ProjectLink } from "./Style";
+import { ProjectCard, ProjectTitle, ProjectDesc, Tools, ProjectTool, ProjectLink } from "../../../globalStyle/projects";
 
-export default function ProjectItem(props) {
+export function ProjectItem(props) {
   return (
     <ProjectCard src={props.project.projectImage}>
       <ProjectTitle>{props.project.projectTitle}</ProjectTitle>

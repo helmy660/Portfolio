@@ -1,8 +1,8 @@
 import React from "react";
-import { CardWrapper } from "../../globalStyle/Style";
-import CourseItem from "../CourseItem";
+import { CardWrapper } from "../../../globalStyle/Style";
+import { CourseItem } from "../";
 
-export default function CourseList() {
+export function CourseList() {
   const courses = [
     {
       courseTitle: "JavaScript Understanding the Weird Parts",

@@ -1,12 +1,6 @@
 import styled from "styled-components";
-import {
-  color7,
-  color1,
-  color5,
-  color6,
-  color2,
-} from "../../globalStyle/colorCode";
-import { device } from "../../globalStyle/devices";
+import { color7, color1, color5, color6, color2 } from "../colorCode";
+import { device } from "../devices";
 
 export const ProjectCard = styled.div`
   width: 70%;
@@ -22,10 +16,7 @@ export const ProjectCard = styled.div`
   align-items: center;
   padding: 10px 8px;
 
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     width: 90%;
     min-width: 90%;
   }

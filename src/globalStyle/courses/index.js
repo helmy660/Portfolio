@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { color1, color2, color5 } from "../../globalStyle/colorCode";
-import { device } from "../../globalStyle/devices";
+import { color1, color2, color5 } from "../colorCode";
+import { device } from "../devices";
 
 export const CourseCard = styled.div`
   width: 100%;

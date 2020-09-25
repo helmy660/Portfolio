@@ -1,9 +1,9 @@
 import React from "react";
-import { SkillCard, SkillImage, SkillDetails, SkillTitle, SkillStars } from "./Style";
+import { SkillCard, SkillImage, SkillDetails, SkillTitle, SkillStars } from "../../../globalStyle/skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-export default function SkillItem(props) {
+export function SkillItem(props) {
   return (
     <SkillCard>
       <SkillImage src={props.skill.skillImage} />

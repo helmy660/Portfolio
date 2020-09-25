@@ -3,9 +3,9 @@ import { PortfolioWrapper } from "./Style";
 import { Switch, Route } from "react-router-dom";
 
 import Intro from "../Intro";
-import SkillList from "../SkillList";
-import CourseList from "../CourseList";
-import ProjectList from "../ProjectList";
+import { SkillList } from "../Skills";
+import { CourseList } from "../Courses";
+import { ProjectList } from "../Projects";
 import Resume from "../Resume";
 
 export default function Portfolio() {
