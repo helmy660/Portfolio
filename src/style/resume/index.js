@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../globalStyle/devices";
+import { device } from "../devices";
 
 export const ResumeCard = styled.div`
   width: 50%;
@@ -13,10 +13,7 @@ export const ResumeCard = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     display: flex;
     justify-content: center;
     align-items: center;

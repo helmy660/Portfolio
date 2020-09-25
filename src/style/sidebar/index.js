@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { device } from "../../globalStyle/devices";
-import { color5 } from "../../globalStyle/colorCode";
+import { device } from "../devices";
+import { color5 } from "../colorCode";
 
 export const SideMenu = styled.div`
   width: 20%;
@@ -16,10 +16,7 @@ export const SideMenu = styled.div`
   list-style-type: none;
   -webkit-user-select: none;
 
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     flex-direction: row;
     justify-content: center;
     width: 100vw;

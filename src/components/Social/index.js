@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialMenu, SocialItem } from "./Style";
+import { SocialMenu, SocialItem } from "../../style/social";
 
 export default function Social() {
   const data = {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { color1, color2, color5 } from "../../globalStyle/colorCode";
-import { device } from "../../globalStyle/devices";
+import { color1, color2, color5 } from "../colorCode";
+import { device } from "../devices";
 
 export const IntroCard = styled.div`
   height: 80%;
@@ -9,10 +9,7 @@ export const IntroCard = styled.div`
   min-width: 270px;
   position: relative;
   margin: 10px auto;
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     width: 85%;
     height: 84%;
   }
@@ -25,10 +22,7 @@ export const Background = styled.div`
   background-size: cover;
   background-position: center;
   opacity: 0.6;
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     opacity: 1;
   }
 `;

@@ -1,6 +1,6 @@
 import React from "react";
-import { ResumeCard, Iframe } from "./Style";
-import { CardWrapper } from "../../globalStyle/Style";
+import { ResumeCard, Iframe } from "../../style/resume";
+import { CardWrapper } from "../../style/wrapper";
 import file from "../../assets/resume.pdf";
 
 export default function Resume() {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../../globalStyle/devices";
+import { device } from "../devices";
 
 export const SocialMenu = styled.div`
   width: 20%;
@@ -15,10 +15,7 @@ export const SocialMenu = styled.div`
   right: 6%;
   position: fixed;
 
-  @media ${device.mobileS},
-    ${device.mobileM},
-    ${device.mobileL},
-    ${device.tablet} {
+  @media ${device.mobileS}, ${device.mobileM}, ${device.mobileL}, ${device.tablet} {
     width: 100%;
     min-width: 100%;
     height: 10vh;

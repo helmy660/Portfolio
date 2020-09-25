@@ -1,7 +1,8 @@
 import React from "react";
-import { SkillCard, SkillImage, SkillDetails, SkillTitle, SkillStars } from "../../../globalStyle/skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+
+import { SkillCard, SkillImage, SkillDetails, SkillTitle, SkillStars } from "../../../style/skills";
 
 export function SkillItem(props) {
   return (

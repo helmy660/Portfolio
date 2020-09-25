@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie, faCheckCircle, faTasks, faLaptopCode, faFile } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-import { SideMenu, SideItem, Title, ItemDetails } from "./Style";
+
+import { SideMenu, SideItem, Title, ItemDetails } from "../../style/sidebar";
 
 export default function SideBar() {
   return (

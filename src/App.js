@@ -1,5 +1,5 @@
 import React from "react";
-import { Wrapper } from "./AppStyle";
+import { Wrapper } from "./style/wrapper";
 import { BrowserRouter as Router } from "react-router-dom";
 import Portfolio from "./components/Portfolio";
 import SideBar from "./components/SideBar";

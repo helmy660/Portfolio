@@ -1,7 +1,7 @@
 import React from "react";
-import { PortfolioWrapper } from "./Style";
 import { Switch, Route } from "react-router-dom";
 
+import { PortfolioWrapper } from "../../style/wrapper";
 import Intro from "../Intro";
 import { SkillList } from "../Skills";
 import { CourseList } from "../Courses";

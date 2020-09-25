@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+
 import {
   CourseCard,
   CourseBackground,
@@ -7,9 +10,7 @@ import {
   CourseAuthor,
   CourseDuration,
   IconShape,
-} from "../../../globalStyle/courses";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+} from "../../../style/courses";
 
 export function CourseItem(props) {
   return (

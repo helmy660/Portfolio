@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectCard, ProjectTitle, ProjectDesc, Tools, ProjectTool, ProjectLink } from "../../../globalStyle/projects";
+import { ProjectCard, ProjectTitle, ProjectDesc, Tools, ProjectTool, ProjectLink } from "../../../style/projects";
 
 export function ProjectItem(props) {
   return (

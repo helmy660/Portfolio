@@ -1,8 +1,9 @@
 import React from "react";
-import { IntroCard, Background, PersonalImage, PersonalDetails, IconShape, Title1, Title2 } from "./Style";
-import { CardWrapper } from "../../globalStyle/Style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faAt, faAddressBook } from "@fortawesome/free-solid-svg-icons";
+
+import { IntroCard, Background, PersonalImage, PersonalDetails, IconShape, Title1, Title2 } from "../../style/home";
+import { CardWrapper } from "../../style/wrapper";
 
 export default function Intro() {
   const data = {

@@ -1,5 +1,5 @@
 import React from "react";
-import { CardWrapper } from "../../../globalStyle/Style";
+import { CardWrapper } from "../../../style/wrapper";
 import { CourseItem } from "../";
 
 export function CourseList() {
