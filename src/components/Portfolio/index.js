@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Intro from "../Intro";
 import SkillList from "../SkillList";
-import CourseList from "../CourseLis";
+import CourseList from "../CourseList";
 import ProjectList from "../ProjectList";
 import Resume from "../Resume";
 

@@ -1,9 +1,9 @@
 import React from "react";
 import { Wrapper } from "./AppStyle";
 import { BrowserRouter as Router } from "react-router-dom";
-import Portfolio from "./components/Portfolio/Portfolio";
-import SideBar from "./components/SideBar/SideBar";
-import Social from "./components/Social/Social";
+import Portfolio from "./components/Portfolio";
+import SideBar from "./components/SideBar";
+import Social from "./components/Social";
 
 export default function App() {
   return (

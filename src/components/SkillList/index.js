@@ -1,6 +1,6 @@
 import React from "react";
 import { CardWrapper } from "../../globalStyle/Style";
-import SkillItem from "../SkillItem/SkillItem";
+import SkillItem from "../SkillItem";
 
 export default function SkillList() {
   const skills = [

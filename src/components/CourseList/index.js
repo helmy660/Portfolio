@@ -1,6 +1,6 @@
 import React from "react";
 import { CardWrapper } from "../../globalStyle/Style";
-import CourseItem from "../CourseItem/CourseItem";
+import CourseItem from "../CourseItem";
 
 export default function CourseList() {
   const courses = [
@@ -33,8 +33,7 @@ export default function CourseList() {
       courseTitle: "React: The Complete guide with redux",
       courseAuthor: "Maxmilian",
       courseDuration: "23 Hours",
-      courseLink:
-        "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
+      courseLink: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
       courseImage: "https://i.udemycdn.com/course/750x422/1362070_b9a1_2.jpg",
     },
     {
@@ -58,8 +57,7 @@ export default function CourseList() {
       courseTitle: "CSS: The Complete Guide with sass",
       courseAuthor: "Maxmilian",
       courseDuration: "8 Hours",
-      courseLink:
-        "https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/",
+      courseLink: "https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/",
       courseImage:
         "https://freecoursestore.com/public/img/1563965282CSS%20-%20The%20Complete%20Guide%20(incl.%20Flexbox,%20Grid%20&%20Sass).jpg",
     },
