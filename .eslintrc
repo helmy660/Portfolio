@@ -1,45 +1,39 @@
 {
-  "root": true, // Make sure eslint picks up the config at the root of the directory
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020, // Use the latest ecmascript standard
-    "sourceType": "module", // Allows using import/export statements
+    "ecmaVersion": 2020,
+    "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true // Enable JSX since we're using React
+      "jsx": true
     }
   },
   "settings": {
     "react": {
-      "version": "detect" // Automatically detect the react version
+      "version": "detect"
     }
   },
-  "env": {
-    "browser": true, // Enables browser globals like window and document
-    "amd": true, // Enables require() and define() as global variables as per the amd spec.
-    "node": true // Enables Node.js global variables and Node.js scoping.
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended" // Make this the last element so prettier config overrides other formatting rules
-  ],
+  "extends": ["plugin:react/recommended", "plugin:@typescript-eslint/recommended", "prettier/@typescript-eslint"],
   "plugins": ["react", "react-hooks"],
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "double"],
-    "space-in-parens": [0, "always"],
-    "computed-property-spacing": [2, "always"],
-    "no-use-before-define": [2, { "functions": false }],
-    "prefer-const": 1,
-    "react/prefer-es6-class": 0,
-    "react/jsx-filename-extension": 0,
-    "react/no-array-index-key": "off",
-    "class-methods-use-this": [1],
-    "no-undef": [1],
-    "no-case-declarations": [1],
-    "no-return-assign": [1],
-    "no-param-reassign": [1],
-    "camelcase": [1],
-    "react/prop-types": "off",
-    "prettier/prettier": "off"
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-inferrable-types": [
+      "warn",
+      {
+        "ignoreParameters": true
+      }
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": "off",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
   }
 }
