@@ -1,12 +1,10 @@
-import sensor from "../../assets/sensor.png";
-
 export const projects = [
   {
     projectTitle: "Sensor Wallet",
     projectTools: ["NodeJs", "React", "ReactNative"],
     projectDesc: "Mobile application to enable users to answer surveys and get points and rewards",
     projectLink: "http://www.mediafire.com/file/d81nk8vwlx9fbux/SensorWalletTestVersion.apk/file",
-    projectImage: sensor,
+    projectImage: "sensor",
   },
   {
     projectTitle: "Contact List",

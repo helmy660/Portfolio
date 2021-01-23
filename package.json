@@ -14,14 +14,14 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.2",
     "eslint-plugin-react-hooks": "^4.1.2",
-    "react-pdf": "^4.1.0",
-    "react-router-dom": "^5.1.2",
-    "styled-components": "^5.0.1",
     "jquery": "^3.5.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-ga": "^3.3.0",
-    "react-scripts": "^4.0.1"
+    "react-pdf": "^4.1.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.4",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
